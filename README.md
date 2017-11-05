@@ -1,6 +1,5 @@
 # GDAXSocketSwift
 
-[![CI Status](http://img.shields.io/travis/Hani Shabsigh/GDAXSocketSwift.svg?style=flat)](https://travis-ci.org/Hani Shabsigh/GDAXSocketSwift)
 [![Version](https://img.shields.io/cocoapods/v/GDAXSocketSwift.svg?style=flat)](http://cocoapods.org/pods/GDAXSocketSwift)
 [![License](https://img.shields.io/cocoapods/l/GDAXSocketSwift.svg?style=flat)](http://cocoapods.org/pods/GDAXSocketSwift)
 [![Platform](https://img.shields.io/cocoapods/p/GDAXSocketSwift.svg?style=flat)](http://cocoapods.org/pods/GDAXSocketSwift)
