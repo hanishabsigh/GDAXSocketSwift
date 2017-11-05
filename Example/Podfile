@@ -2,11 +2,5 @@ use_frameworks!
 
 target 'GDAXSocketSwift_Example' do
   pod 'GDAXSocketSwift', :path => '../'
-
-  target 'GDAXSocketSwift_Tests' do
-    inherit! :search_paths
-
-    pod 'Quick', '~> 1.2.0'
-  pod 'Nimble', '~> 7.0.2'
-  end
+  pod 'Starscream', '~> 3.0.2'
 end
