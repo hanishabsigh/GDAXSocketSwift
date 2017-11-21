@@ -8,17 +8,17 @@
 
 import Foundation
 
-public class GDAXSubscriptionMessage {
+open class GDAXSubscriptionMessage {
     
-    public let channels: [GDAXChannel]
-    public let productIds: [GDAXProductId]
+    open let channels: [GDAXChannel]
+    open let productIds: [GDAXProductId]
     
     public init(channels:[GDAXChannel], productIds:[GDAXProductId]) {
         self.channels = channels
         self.productIds = productIds
     }
     
-    public func subscribeJSON(type: GDAXType, channels:[GDAXChannel], productIds:[GDAXProductId]) -> [String : Any] {
+    open func subscribeJSON(type: GDAXType, channels:[GDAXChannel], productIds:[GDAXProductId]) -> [String : Any] {
         let channels = self.channels.map { $0.rawValue }
         let productIds = self.productIds.map { $0.rawValue }
         

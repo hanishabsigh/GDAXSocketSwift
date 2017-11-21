@@ -8,9 +8,9 @@
 
 import Foundation
 
-public class GDAXHeartbeat: GDAXProductSequenceTimeMessage {
+open class GDAXHeartbeat: GDAXProductSequenceTimeMessage {
     
-    public let lastTradeId: Int
+    open let lastTradeId: Int
     
     public required init(json: [String: Any]) throws {
 

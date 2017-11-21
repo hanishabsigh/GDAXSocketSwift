@@ -13,11 +13,11 @@ public enum GDAXBidAskType: String {
     case bid, ask
 }
 
-public struct GDAXBidAsk {
+open class GDAXBidAsk {
     
-    public let type: GDAXBidAskType
-    public let price: Double
-    public let size: Double
+    open let type: GDAXBidAskType
+    open let price: Double
+    open let size: Double
     
     public init(type: GDAXBidAskType, price: Double, size: Double) {
         self.type = type

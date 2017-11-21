@@ -6,10 +6,10 @@
 //  Copyright © 2017 Hani Shabsigh. All rights reserved.
 //
 
-public class GDAXSnapshot: GDAXProductMessage {
+open class GDAXSnapshot: GDAXProductMessage {
     
-    public let bids: [GDAXBidAsk]
-    public let asks: [GDAXBidAsk]
+    open let bids: [GDAXBidAsk]
+    open let asks: [GDAXBidAsk]
     
     public required init(json: [String: Any]) throws {
 

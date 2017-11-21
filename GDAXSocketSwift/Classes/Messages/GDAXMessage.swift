@@ -8,9 +8,9 @@
 
 import Foundation
 
-public class GDAXMessage: JSONInitializable {
+open class GDAXMessage: JSONInitializable {
     
-    public let type: GDAXType
+    open let type: GDAXType
 
     public required init(json: [String: Any]) throws {
 

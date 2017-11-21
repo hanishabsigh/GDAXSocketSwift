@@ -6,9 +6,9 @@
 //  Copyright © 2017 Hani Shabsigh. All rights reserved.
 //
 
-public class GDAXUpdate: GDAXProductMessage {
+open class GDAXUpdate: GDAXProductMessage {
     
-    public let changes: [GDAXUpdateChange]
+    open let changes: [GDAXUpdateChange]
     
     public required init(json: [String: Any]) throws {
         

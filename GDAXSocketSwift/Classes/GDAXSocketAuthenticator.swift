@@ -8,16 +8,10 @@
 
 import CryptoSwift
 
-public class GDAXSocketAuthenticator {
+internal class GDAXSocketAuthenticator {
     
-    public let socketClient: GDAXSocketClient
-    
-    public init(socketClient: GDAXSocketClient) {
-        self.socketClient = socketClient
-    }
-    
-    public func authenticate(jsonObject: inout [String:Any]) throws {
-        guard let apiKey = socketClient.apiKey, let secret64 = socketClient.secret64, let passphrase = socketClient.passphrase else {
+    internal class func authenticate(jsonObject: inout [String:Any], apiKey: String?, secret64: String?, passphrase: String?) throws {
+        guard let apiKey = apiKey, let secret64 = secret64, let passphrase = passphrase else {
             throw GDAXError.authenticationBuilderError("GDAX API key, secret and passphrase are not defined")
         }
         
@@ -32,7 +26,7 @@ public class GDAXSocketAuthenticator {
         jsonObject["timestamp"] = timestamp
     }
     
-    private func generateSignature(secret64: String, timestamp: Int64, method: String, relativeURL: String) throws -> String {
+    private class func generateSignature(secret64: String, timestamp: Int64, method: String, relativeURL: String) throws -> String {
         let preHash = "\(timestamp)\(method.uppercased())\(relativeURL)"
         
         guard let secret = Data(base64Encoded: secret64) else {

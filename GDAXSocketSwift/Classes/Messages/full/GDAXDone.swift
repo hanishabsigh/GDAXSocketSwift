@@ -8,13 +8,13 @@
 
 import Foundation
 
-public class GDAXDone: GDAXProductSequenceTimeMessage {
+open class GDAXDone: GDAXProductSequenceTimeMessage {
     
-    public let orderId: String
-    public let price: Double?
-    public let remainingSize: Double?
-    public let side: GDAXSide
-    public let reason: String
+    open let orderId: String
+    open let price: Double?
+    open let remainingSize: Double?
+    open let side: GDAXSide
+    open let reason: String
     
     public required init(json: [String: Any]) throws {
         

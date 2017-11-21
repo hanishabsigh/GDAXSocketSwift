@@ -8,9 +8,9 @@
 
 import Foundation
 
-public class GDAXSubscribe: GDAXSubscriptionMessage, JSONConvertible {
+open class GDAXSubscribe: GDAXSubscriptionMessage, JSONConvertible {
     
-    public func asJSON() -> [String : Any] {
+    open func asJSON() -> [String : Any] {
         return subscribeJSON(type: .subscribe, channels: self.channels, productIds: self.productIds)
     }
 }

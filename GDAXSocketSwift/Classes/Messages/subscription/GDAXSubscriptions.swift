@@ -8,9 +8,9 @@
 
 import Foundation
 
-public class GDAXSubscriptions: GDAXMessage {
+open class GDAXSubscriptions: GDAXMessage {
     
-    public let channels: [GDAXSubscription]
+    open let channels: [GDAXSubscription]
     
     public required init(json: [String: Any]) throws {
         

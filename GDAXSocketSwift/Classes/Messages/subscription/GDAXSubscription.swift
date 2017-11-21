@@ -8,10 +8,10 @@
 
 import Foundation
 
-public struct GDAXSubscription {
+open class GDAXSubscription {
     
-    public let channel:GDAXChannel
-    public let productIds:[GDAXProductId]
+    open let channel:GDAXChannel
+    open let productIds:[GDAXProductId]
     
     public init(json: [String: Any]) throws {
         

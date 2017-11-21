@@ -8,19 +8,19 @@
 
 import Foundation
 
-public class GDAXActivate: GDAXProductMessage {
+open class GDAXActivate: GDAXProductMessage {
     
-    public let timestamp: Date
-    public let userId: String
-    public let profileId: String
-    public let orderId: String
-    public let stopType: String
-    public let side: GDAXSide
-    public let stopPrice: Double
-    public let size: Double
-    public let funds: Double
-    public let takerFeeRate: Double
-    public let privateUpdate: Bool
+    open let timestamp: Date
+    open let userId: String
+    open let profileId: String
+    open let orderId: String
+    open let stopType: String
+    open let side: GDAXSide
+    open let stopPrice: Double
+    open let size: Double
+    open let funds: Double
+    open let takerFeeRate: Double
+    open let privateUpdate: Bool
     
     public required init(json: [String: Any]) throws {
         

@@ -16,9 +16,6 @@ public class GDAXSocketClient {
     internal let apiKey: String?
     internal let secret64: String?
     internal let passphrase: String?
-    lazy var authenticator: GDAXSocketAuthenticator = {
-        return GDAXSocketAuthenticator(socketClient: self)
-    }()
     
     public weak var delegate: GDAXSocketClientDelegate?
     public var webSocket: GDAXWebSocketClient? {
@@ -68,7 +65,7 @@ public class GDAXSocketClient {
     private func authenticate(json: [String: Any]) -> [String: Any] {
         var json = json
         do {
-            try authenticator.authenticate(jsonObject: &json)
+            try GDAXSocketAuthenticator.authenticate(jsonObject: &json, apiKey: apiKey, secret64: secret64, passphrase: passphrase)
         } catch GDAXError.authenticationBuilderError(let message) {
             logger?.logGDAXSocketAuthenticationBuilderError(socket: self, message: message)
         } catch { }

@@ -8,9 +8,9 @@
 
 import Foundation
 
-public class GDAXErrorMessage: GDAXMessage {
+open class GDAXErrorMessage: GDAXMessage {
     
-    public let message: String
+    open let message: String
     
     public required init(json: [String: Any]) throws {
         
