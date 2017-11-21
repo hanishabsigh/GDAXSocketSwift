@@ -8,10 +8,10 @@
 
 import Foundation
 
-public class GDAXProductSequenceTimeMessage: GDAXProductMessage {
+open class GDAXProductSequenceTimeMessage: GDAXProductMessage {
     
-    public let sequence: Int
-    public let time: Date?
+    open let sequence: Int
+    open let time: Date?
     
     public required init(json: [String: Any]) throws {
         guard let sequence = json["sequence"] as? NSNumber else {
