@@ -17,7 +17,9 @@ This library was inspired by [GDAXSwift](https://github.com/anthonypuppo/GDAXSwi
 
 ## Requirements
 
-- iOS 8.1+
+- iOS 8.1+ / macOS 10.13+ / tvOS 11.0+ / watchOS 4.0+
+- Xcode 9.0+
+- Swift 4.0+
 
 ## Installation
 
@@ -118,7 +120,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Author
 
-Hani Shabsigh, [LinkedIn](hanishabsigh.com), [GitHub](https://github.com/hanishabsigh)
+Hani Shabsigh, [LinkedIn](http://hanishabsigh.com), [GitHub](https://github.com/hanishabsigh)
 
 ## License
 
