@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class GDAXErrorMessage: GDAXMessage {
+@objc open class GDAXErrorMessage: GDAXMessage {
     
     open let message: String
     
