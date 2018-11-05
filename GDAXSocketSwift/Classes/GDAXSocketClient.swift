@@ -10,8 +10,8 @@ import Foundation
 
 @objc public class GDAXSocketClient: NSObject {
     
-    public static let baseAPIURLString = "wss://ws-feed.gdax.com"
-    public static let baseSandboxAPIURLString = "wss://ws-feed-public.sandbox.gdax.com"
+    public static let baseAPIURLString = "wss://ws-feed.pro.coinbase.com"
+    public static let baseSandboxAPIURLString = "wss://ws-feed-public.sandbox.pro.coinbase.com"
     
     internal let apiKey: String?
     internal let secret64: String?
