@@ -14,4 +14,5 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '4.0'
   s.source_files = 'GDAXSocketSwift/Classes/**/*'
   s.dependency 'CryptoSwift'
+  s.swift_version = '4.2'
 end

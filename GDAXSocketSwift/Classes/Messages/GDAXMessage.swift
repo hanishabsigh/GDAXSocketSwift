@@ -10,7 +10,7 @@ import Foundation
 
 open class GDAXMessage: NSObject, JSONInitializable {
     
-    open let type: GDAXType
+    public let type: GDAXType
 
     public required init(json: [String: Any]) throws {
 
