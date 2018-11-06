@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GDAXSocketSwift'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'Unofficial Swift implementation of GDAX WebSocket API.'
   s.description      = 'Unofficial Swift implementation of GDAX Websocket API.'
   s.homepage         = 'https://github.com/hanishabsigh/GDAXSocketSwift'
@@ -14,4 +14,6 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '4.0'
   s.source_files = 'GDAXSocketSwift/Classes/**/*'
   s.dependency 'CryptoSwift'
+  s.swift_version = '4.2'
+  s.deprecated_in_favor_of = 'CoinbaseSocketSwift'
 end
