@@ -1,3 +1,5 @@
+# Deprecated in favor of [CoinbaseSocketSwift](https://github.com/hanishabsigh/CoinbaseSocketSwift)
+
 # GDAXSocketSwift
 
 [![Version](https://img.shields.io/cocoapods/v/GDAXSocketSwift.svg?style=flat)](http://cocoapods.org/pods/GDAXSocketSwift)
